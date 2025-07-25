@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Prediction Page</title>
+    <style>
+        /* Add any additional styling here */
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px 0;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label for="audioLocation">Enter Audio File Location:</label>
+    <input type="text" id="audioLocation" placeholder="Enter audio file location">
+    <br>
+
+    <br>
+
+    <audio id="audioPlayer" controls>
+        <source src="" type="audio/mp3"> <!-- Initially empty source -->
+        Your browser does not support the audio element.
+    </audio>
+
+    <br>
+
+    <div>
+        <table>
+            <tr>
+                <!-- Add table headers based on your requirements -->
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <!-- Add more headers if needed -->
+            </tr>
+            <tr>
+                <!-- Add table data based on your requirements -->
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <!-- Add more data cells if needed -->
+            </tr>
+            <!-- Add more rows if needed -->
+        </table>
+    </div>
+
+    <button onclick="predict()">Predict</button>
+
+    <br>
+    <br>
+
+    <label for="resultLabel">Prediction Result:</label>
+    <p id="resultLabel"></p>
+
+    <script>
+        function predict() {
+            // Add your prediction logic here
+            // You can update the resultLabel text using JavaScript
+            document.getElementById("resultLabel").innerText = "Prediction result will be displayed here.";
+        }
+    </script>
+
+</body>
+
+</html>
